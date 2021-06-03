@@ -1,0 +1,50 @@
+site_name: Docs X do Mapa
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+nav:
+  - Setup:
+    - Android: setup/android.md       
+  - Domain: 
+    - Introdução: domain/introducao.md     
+    - Eventos: null.md
+    - Empresas: null.md
+    - Detalhe empresa: null.md
+    - Prêmios: null.md
+  - Auth: 
+    - Introdução: auth/introducao.md
+
+theme:
+  name: null
+  custom_dir: mkdocs-material/material
+
+  palette:
+    primary: black
+
+  # features:
+  #   - navigation.expand
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
